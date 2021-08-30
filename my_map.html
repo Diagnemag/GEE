@@ -1,0 +1,3887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Map</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "1d6b971e7c27441aa7b86c39616d4c5e": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Maps",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
+      }
+    },
+    "f4ae8e86d651400482b1702c34f8fec1": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+      }
+    },
+    "76f05ccdd80c4a84abf372c5536cb5a1": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Terrain",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}"
+      }
+    },
+    "1f0a07f8fe15418e80cf6d17292a9f3b": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
+      }
+    },
+    "d322c06af42c4189a60e3dfda5761e22": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "9c21e14952e744268659a2dab3ccd7db": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Ocean",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "b3f4047dbf0a45e080bd56bdc0d66779": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "0516e71203f146a2804d798b6560fefa": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Standard",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "3a9d87d1310e4d0bb9a388407dda53bf": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Terrain",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "d062c32590504b0090858f34d4b6592e": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Transportation",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "dbd8ee9e47d14050acfa8abd7813e266": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Topo World",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "1b63202f45054e70966b844239008ab9": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri National Geographic",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "bc6afefd72434794b7b546344e508a43": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Shaded Relief",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://services.arcgisonline.com/arcgis/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "e5d422efdf5347a1a7dac322c288de3a": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Esri",
+        "name": "Esri Physical Map",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://services.arcgisonline.com/arcgis/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "e14722b336da4a21a8231274e6933f28": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "FWS",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "1",
+        "name": "FWS NWI Wetlands",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.fws.gov/wetlands/arcgis/services/Wetlands/MapServer/WMSServer?"
+      }
+    },
+    "72512d8c0b7344eb8a04ea66f554ea58": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "FWS",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "0",
+        "name": "FWS NWI Wetlands Raster",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.fws.gov/wetlands/arcgis/services/Wetlands_Raster/ImageServer/WMSServer?"
+      }
+    },
+    "deca3842279b48e09ace87161de62928": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Maps",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
+      }
+    },
+    "ca0b7aef9e3047978c45f75dae8ea665": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+      }
+    },
+    "f5a37eabb2804281a9db120880ddb49c": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Terrain",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}"
+      }
+    },
+    "8a22ca6bd4704773be99027b6a1fa49e": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google",
+        "name": "Google Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
+      }
+    },
+    "014642b140104c8ca55bf9062b4e0b79": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2016_Land_Cover_L48",
+        "name": "NLCD 2016 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2016_Land_Cover_L48/wms?"
+      }
+    },
+    "16acf3518a0b4cf19143efbde3327b1a": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2013_Land_Cover_L48",
+        "name": "NLCD 2013 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2013_Land_Cover_L48/wms?"
+      }
+    },
+    "63b8c3577c7547f4bef418a15a216831": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2011_Land_Cover_L48",
+        "name": "NLCD 2011 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2011_Land_Cover_L48/wms?"
+      }
+    },
+    "71b5ab9137a54064a73e6d7a6b1d5cf8": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2008_Land_Cover_L48",
+        "name": "NLCD 2008 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2008_Land_Cover_L48/wms?"
+      }
+    },
+    "da9a88abf0bb44e8a9f1a1bfd3888a42": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2006_Land_Cover_L48",
+        "name": "NLCD 2006 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2006_Land_Cover_L48/wms?"
+      }
+    },
+    "e384986c1d1044c3b62137afb7ed6629": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2004_Land_Cover_L48",
+        "name": "NLCD 2004 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2004_Land_Cover_L48/wms?"
+      }
+    },
+    "03d5dc5064b84551bc245be92d0d00d3": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "MRLC",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "NLCD_2001_Land_Cover_L48",
+        "name": "NLCD 2001 CONUS Land Cover",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://www.mrlc.gov/geoserver/mrlc_display/NLCD_2001_Land_Cover_L48/wms?"
+      }
+    },
+    "e14f52f75c8140daa30f9207e9dca217": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "USGS",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "0",
+        "name": "USGS NAIP Imagery",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer?"
+      }
+    },
+    "1d2408d1d8cc4a429611d66e49b53eac": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "USGS",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "0",
+        "name": "USGS Hydrography",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://basemap.nationalmap.gov/arcgis/services/USGSHydroCached/MapServer/WMSServer?"
+      }
+    },
+    "9b8c25bbc9534fd1bebbbfa6c3fdab52": {
+      "model_name": "LeafletWMSLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "USGS",
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "format": "image/png",
+        "layers": "3DEPElevation:None",
+        "name": "USGS 3DEP Elevation",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "format",
+          "layers",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "styles",
+          "tile_size",
+          "tms",
+          "transparent",
+          "uppercase"
+        ],
+        "transparent": true,
+        "url": "https://elevation.nationalmap.gov/arcgis/services/3DEPElevation/ImageServer/WMSServer?"
+      }
+    },
+    "2e5cb927e7be4d0f890701a0118e2250": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.Mapnik",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "57aa2296b8494378adb9ba80acb813bd": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+        "min_zoom": 1,
+        "name": "OpenStreetMap.BlackAndWhite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+      }
+    },
+    "01fa95d28d764a6c91eed99294ff9a9f": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+        "min_zoom": 1,
+        "name": "OpenStreetMap.DE",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png"
+      }
+    },
+    "20c7392731a14e26babb7445c6d1bc09": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; Openstreetmap France | &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.France",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png"
+      }
+    },
+    "2c69a33a4a92473c9104210edd04b025": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>, Tiles courtesy of <a href=\"http://hot.openstreetmap.org/\" target=\"_blank\">Humanitarian OpenStreetMap Team</a>",
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "OpenStreetMap.HOT",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+      }
+    },
+    "752efbc7c496425d913a7a091d2e4b14": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "",
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "Gaode.Normal",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}"
+      }
+    },
+    "5b9dfaca4c254637aea40ff4e7aeba54": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "",
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "Gaode.Satellite",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}"
+      }
+    },
+    "861145deb57a4d9cb94044a1de2ac80e": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map data: &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>, <a href=\"http://viewfinderpanoramas.org\">SRTM</a> | Map style: &copy; <a href=\"https://opentopomap.org\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
+        "max_zoom": 17,
+        "min_zoom": 1,
+        "name": "OpenTopoMap",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+      }
+    },
+    "cbcc7e2e2e0442029e9a1becf0af9cc9": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+        "min_zoom": 1,
+        "name": "Hydda.Full",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png"
+      }
+    },
+    "c3e667bef7dc4a45a72e15af2e3f246b": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+        "min_zoom": 1,
+        "name": "Hydda.Base",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png"
+      }
+    },
+    "1eaca9b22ea047da9b6199eb472a1055": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "Esri.WorldStreetMap",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "7b84aaa2f27e4e358ca23ed597cfd6bf": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme",
+        "max_zoom": 11,
+        "min_zoom": 1,
+        "name": "Esri.DeLorme",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "3b4b767106e54e2993a139abc0083fab": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "Esri.WorldTopoMap",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "e40585d9474749e38b0c40edd3313ef3": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "Esri.WorldImagery",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "228b01c8edd749f7a8a2f41816372c8c": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
+        "max_zoom": 16,
+        "min_zoom": 1,
+        "name": "Esri.NatGeoWorldMap",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}"
+      }
+    },
+    "ecd6f052edd94452851cb94003af40e3": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "name": "HikeBike.HikeBike",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://{s}.tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png"
+      }
+    },
+    "992c8f4546a74f20add30553e32364c4": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> &amp; USGS",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "MtbMap",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png"
+      }
+    },
+    "e62251f6c43d49a5bef4b9a9ec9b4717": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> &copy; <a href=\"http://cartodb.com/attributions\">CartoDB</a>",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "CartoDB.Positron",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+      }
+    },
+    "a2ac73bdca074ad08328bb163ca104c5": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> &copy; <a href=\"http://cartodb.com/attributions\">CartoDB</a>",
+        "max_zoom": 20,
+        "min_zoom": 1,
+        "name": "CartoDB.DarkMatter",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+      }
+    },
+    "c03c6f31b94c4a2dad60a3f88033839b": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 9,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ModisTerraTrueColorCR",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2021-08-17/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
+      }
+    },
+    "103811b11fe74831bb52a63121afcbff": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 9,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ModisTerraBands367CR",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_Bands367/default/2021-08-17/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
+      }
+    },
+    "94c671e016a746f1a7ff9f39f1fc4566": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 9,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ModisTerraBands721CR",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_Bands721/default/2021-08-17/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
+      }
+    },
+    "3ee621f92f3f4051937cc7e81d6f0f02": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 9,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ModisAquaTrueColorCR",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Aqua_CorrectedReflectance_TrueColor/default/2021-08-17/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
+      }
+    },
+    "965ad3d7dc3c4079a5b73e019f13149a": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 9,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ModisAquaBands721CR",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Aqua_CorrectedReflectance_Bands721/default/2021-08-17/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
+      }
+    },
+    "b14d0c02bda843d98c8eb670d31e51ca": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 9,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ViirsTrueColorCR",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/2021-08-17/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg"
+      }
+    },
+    "e5e72e3dd6144029856082db4e49e1ac": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 8,
+        "min_zoom": 1,
+        "name": "NASAGIBS.ViirsEarthAtNight2012",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "http://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/2012-01-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png"
+      }
+    },
+    "a633082f35ef4189b358f491c656e359": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 5,
+        "min_zoom": 1,
+        "name": "NASAGIBS.BlueMarble3413",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3413/best/BlueMarble_NextGeneration/default/EPSG3413_500m/{z}/{y}/{x}.jpeg"
+      }
+    },
+    "4d63bd13f66542c687908cf29b313a7f": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 5,
+        "min_zoom": 1,
+        "name": "NASAGIBS.BlueMarble3031",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3031/best/BlueMarble_NextGeneration/default/EPSG3031_500m/{z}/{y}/{x}.jpeg"
+      }
+    },
+    "5c5d07c76e73408bbee246ae8f1eb1ff": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "\nImagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.\n",
+        "max_zoom": 8,
+        "min_zoom": 1,
+        "name": "NASAGIBS.BlueMarble",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/EPSG3857_500m/{z}/{y}/{x}.jpeg"
+      }
+    },
+    "016a13d36da74ecc9eca342c4b9309ab": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
+        "max_zoom": 15,
+        "min_zoom": 1,
+        "name": "Strava.All",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://heatmap-external-a.strava.com//tiles/all/hot/{z}/{x}/{y}.png?v=19"
+      }
+    },
+    "94c73a3fe5ff404096ea46d75a1a3e3e": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
+        "max_zoom": 15,
+        "min_zoom": 1,
+        "name": "Strava.Ride",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://heatmap-external-a.strava.com//tiles/ride/hot/{z}/{x}/{y}.png?v=19"
+      }
+    },
+    "4fdfd2808f234c9e810f752e746d0cd3": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
+        "max_zoom": 15,
+        "min_zoom": 1,
+        "name": "Strava.Run",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://heatmap-external-a.strava.com//tiles/run/bluered/{z}/{x}/{y}.png?v=19"
+      }
+    },
+    "f8b4e1d9f81c4a61baa1d9a8734d2299": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
+        "max_zoom": 15,
+        "min_zoom": 1,
+        "name": "Strava.Water",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://heatmap-external-a.strava.com//tiles/water/blue/{z}/{x}/{y}.png?v=19"
+      }
+    },
+    "64c71daee7bb498bacfe07fc94ff07e4": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
+        "max_zoom": 15,
+        "min_zoom": 1,
+        "name": "Strava.Winter",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://heatmap-external-a.strava.com//tiles/winter/hot/{z}/{x}/{y}.png?v=19"
+      }
+    },
+    "d40fde2a92b1461ca56a2114c52365b1": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"http://stamen.com/\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org/\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY SA</a>.",
+        "name": "Stamen.Terrain",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://stamen-tiles-a.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png"
+      }
+    },
+    "cf40f152ea9b4922adf380d295aa4480": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"http://stamen.com/\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org/\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY SA</a>.",
+        "max_zoom": 20,
+        "name": "Stamen.Toner",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://stamen-tiles-a.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
+      }
+    },
+    "e2ec6db4ae4e4f909196444d5a509570": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Map tiles by <a href=\"http://stamen.com/\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org/\">OpenStreetMap</a>, under <a href=\"http://creativecommons.org/licenses/by-sa/3.0\">CC BY SA</a>.",
+        "min_zoom": 1,
+        "name": "Stamen.Watercolor",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://stamen-tiles-a.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png"
+      }
+    },
+    "b1097846639545e4b5e4df0e7f811e7c": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "dc9546cd5ef7406193e88891a1b0fa34": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "move"
+      }
+    },
+    "e2912c5038724d6ea791cc887d3a3472": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "base": true,
+        "max_zoom": 19,
+        "min_zoom": 1,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ]
+      }
+    },
+    "b3ab532438b6445ba3c9da252f671086": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "880px",
+        "width": "100%"
+      }
+    },
+    "91ca700ce0f34affa77981e43afef275": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {}
+    },
+    "99c9d8f1c6ce454480ec8b8c237463f3": {
+      "model_name": "LeafletMapModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_dom_classes": [],
+        "bottom": 180614.0,
+        "center": [
+          48.88187650678903,
+          2.4312896993419746
+        ],
+        "controls": [
+          "IPY_MODEL_3c66efe881be4d2984831124826257bf",
+          "IPY_MODEL_bb4d8506117c483191962fd6b8e75d3d",
+          "IPY_MODEL_fda8741ef7214fe9ac2408389dace719",
+          "IPY_MODEL_acc43eb10d924aefaf251a3462431e49",
+          "IPY_MODEL_62369605527245db8946d093e4810948",
+          "IPY_MODEL_805309fe3ded475aa0eabf2ceb6d534e",
+          "IPY_MODEL_7a7f8c0f844d43d3bbb1490067b41f54",
+          "IPY_MODEL_cbf428fbfd164b979ba8c0197db9710f",
+          "IPY_MODEL_4ff035dffc994c54b0f42d6cd6a30e49",
+          "IPY_MODEL_c446847d27344407ae2b09ddd84eecf8",
+          "IPY_MODEL_59ecb6ae02dd444385388e1b7e5ce7d9",
+          "IPY_MODEL_32297e8698b84792a3de873e21caeb5a"
+        ],
+        "crs": {
+          "name": "EPSG3857",
+          "custom": false
+        },
+        "default_style": "IPY_MODEL_39b88bf270fe4c9cae31f9d911ae4a51",
+        "dragging_style": "IPY_MODEL_dc9546cd5ef7406193e88891a1b0fa34",
+        "east": 2.705604579713069,
+        "layers": [
+          "IPY_MODEL_e2912c5038724d6ea791cc887d3a3472",
+          "IPY_MODEL_1d6b971e7c27441aa7b86c39616d4c5e",
+          "IPY_MODEL_f4ae8e86d651400482b1702c34f8fec1",
+          "IPY_MODEL_3134b70e0ec84296892240c33634a34d",
+          "IPY_MODEL_13bd4b9025db4d5bb37f7c316f89d1a9"
+        ],
+        "layout": "IPY_MODEL_b3ab532438b6445ba3c9da252f671086",
+        "left": 265285.3222608017,
+        "north": 49.017157315497165,
+        "options": [
+          "bounce_at_zoom_limits",
+          "box_zoom",
+          "center",
+          "close_popup_on_click",
+          "double_click_zoom",
+          "dragging",
+          "fullscreen",
+          "inertia",
+          "inertia_deceleration",
+          "inertia_max_speed",
+          "interpolation",
+          "keyboard",
+          "keyboard_pan_offset",
+          "keyboard_zoom_offset",
+          "max_zoom",
+          "min_zoom",
+          "scroll_wheel_zoom",
+          "tap",
+          "tap_tolerance",
+          "touch_zoom",
+          "world_copy_jump",
+          "zoom",
+          "zoom_animation_threshold",
+          "zoom_delta",
+          "zoom_snap",
+          "zoom_start"
+        ],
+        "right": 266084.3222608017,
+        "scroll_wheel_zoom": true,
+        "south": 48.746228791937774,
+        "style": "IPY_MODEL_39b88bf270fe4c9cae31f9d911ae4a51",
+        "top": 180014.0,
+        "west": 2.156974818970881,
+        "window_url": "http://localhost:8888/notebooks/GEE/Add_polygon_vector_get_aoi.ipynb",
+        "zoom": 11.0
+      }
+    },
+    "f492542c2d4948089e3c07249ee76c8f": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "87f45bc2dccf461a895f10999a76f89b": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "2db228a151d541b095b5749072a06f3e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "28px",
+        "padding": "0px 0px 0px 4px",
+        "width": "28px"
+      }
+    },
+    "4b705cbe8660499a98d94a495ede86f7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "2c954857d4284bb48bf26706d3463a9b": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "globe",
+        "layout": "IPY_MODEL_2db228a151d541b095b5749072a06f3e",
+        "style": "IPY_MODEL_4b705cbe8660499a98d94a495ede86f7",
+        "tooltip": "Search location/data"
+      }
+    },
+    "5b19075fcdef44ca93251dcd16769dac": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "004a1dc49c30471fb4ad1d12aeb8b4bf": {
+      "model_name": "ToggleButtonsStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "button_width": "110px"
+      }
+    },
+    "242d1c2be11046c0b0de302f5f74d39a": {
+      "model_name": "ToggleButtonsModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [
+          "name/address",
+          "lat-lon",
+          "data"
+        ],
+        "icons": [],
+        "index": 0,
+        "layout": "IPY_MODEL_5b19075fcdef44ca93251dcd16769dac",
+        "style": "IPY_MODEL_004a1dc49c30471fb4ad1d12aeb8b4bf",
+        "tooltips": [
+          "Search by place name or address",
+          "Search by lat-lon coordinates",
+          "Search Earth Engine data catalog"
+        ]
+      }
+    },
+    "62fed6ada3324665bfa6b52d55fa9ca9": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "340px"
+      }
+    },
+    "6c34ef2703eb4608bc3e505c4c37aece": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "b510046b196547ed9dc583df302c771a": {
+      "model_name": "TextModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_62fed6ada3324665bfa6b52d55fa9ca9",
+        "placeholder": "Search by place name or address",
+        "style": "IPY_MODEL_6c34ef2703eb4608bc3e505c4c37aece"
+      }
+    },
+    "9fa1225927ed4b899d185fd70a43bef4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "max_height": "250px",
+        "max_width": "340px",
+        "overflow": "scroll"
+      }
+    },
+    "e5d0d1bc1db646368c8d6969d7440ac1": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_9fa1225927ed4b899d185fd70a43bef4",
+        "outputs": []
+      }
+    },
+    "7a3f08bbf18c450b908ce7bd542ac052": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "7dea604655a44ba19f63d478839cdeb7": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "dff68bb451d84a3fbf25d8b3b7e3f806": {
+      "model_name": "RadioButtonsModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [],
+        "layout": "IPY_MODEL_7a3f08bbf18c450b908ce7bd542ac052",
+        "style": "IPY_MODEL_7dea604655a44ba19f63d478839cdeb7"
+      }
+    },
+    "4a83b6f006254d82bb497d4ba71790eb": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "max_width": "279px",
+        "min_width": "279px"
+      }
+    },
+    "0412f8b354934c709cf5fc170670f6ea": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5bbd0ebbac4e44a395b68f467a103b42": {
+      "model_name": "DropdownModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [],
+        "layout": "IPY_MODEL_4a83b6f006254d82bb497d4ba71790eb",
+        "style": "IPY_MODEL_0412f8b354934c709cf5fc170670f6ea"
+      }
+    },
+    "0a66c2c223a84d78a0b39fe28eadb4d1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "max_width": "57px",
+        "min_width": "57px"
+      }
+    },
+    "8fb26cc9001e46ec873b42a6b8b32e32": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9488b51b111c4777aceec773b7c24fea": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "description": "import",
+        "layout": "IPY_MODEL_0a66c2c223a84d78a0b39fe28eadb4d1",
+        "style": "IPY_MODEL_8fb26cc9001e46ec873b42a6b8b32e32",
+        "tooltip": "Click to import the selected asset"
+      }
+    },
+    "7be0a853f7064aef872c96fb8611d19e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e3655ed4cae141b0a3639e8e0ac86ece": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "34f0b469845b45e98de45295500588cd": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_7be0a853f7064aef872c96fb8611d19e",
+        "style": "IPY_MODEL_e3655ed4cae141b0a3639e8e0ac86ece"
+      }
+    },
+    "eba6af137dbf4949a61734d4e4a16881": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c51dc3228ec047bcb10b62a163a0a51c": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_9488b51b111c4777aceec773b7c24fea",
+          "IPY_MODEL_5bbd0ebbac4e44a395b68f467a103b42"
+        ],
+        "layout": "IPY_MODEL_eba6af137dbf4949a61734d4e4a16881"
+      }
+    },
+    "ada394d3124949b8ad45887efbb2b3b3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "fe79b7d7ecbb4ad387a899901674d3b0": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_242d1c2be11046c0b0de302f5f74d39a",
+          "IPY_MODEL_b510046b196547ed9dc583df302c771a"
+        ],
+        "layout": "IPY_MODEL_ada394d3124949b8ad45887efbb2b3b3"
+      }
+    },
+    "dd1d44fc9c3742cb835324f97c4a273e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "896c8a97a539474fb0f64be9d1429247": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_view_count": 1,
+        "children": [
+          "IPY_MODEL_2c954857d4284bb48bf26706d3463a9b"
+        ],
+        "layout": "IPY_MODEL_dd1d44fc9c3742cb835324f97c4a273e"
+      }
+    },
+    "959a88bcfe60434baacd78873b7adbcf": {
+      "model_name": "EventModel",
+      "model_module": "ipyevents",
+      "model_module_version": "1.9.0",
+      "state": {
+        "_supported_key_events": [
+          "keydown",
+          "keyup"
+        ],
+        "_supported_mouse_events": [
+          "click",
+          "auxclick",
+          "dblclick",
+          "mouseenter",
+          "mouseleave",
+          "mousedown",
+          "mouseup",
+          "mousemove",
+          "wheel",
+          "contextmenu",
+          "dragstart",
+          "drag",
+          "dragend",
+          "dragenter",
+          "dragover",
+          "dragleave",
+          "drop"
+        ],
+        "_supported_touch_events": [
+          "touchstart",
+          "touchend",
+          "touchmove",
+          "touchcancel"
+        ],
+        "source": "IPY_MODEL_896c8a97a539474fb0f64be9d1429247",
+        "watched_events": [
+          "mouseenter",
+          "mouseleave"
+        ],
+        "xy": []
+      }
+    },
+    "3c66efe881be4d2984831124826257bf": {
+      "model_name": "LeafletWidgetControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "transparent_bg"
+        ],
+        "widget": "IPY_MODEL_896c8a97a539474fb0f64be9d1429247"
+      }
+    },
+    "493bba6812944e3c8d66e79d7fe1cb8f": {
+      "model_name": "LeafletAwesomeIconModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon_color": "darkgreen",
+        "marker_color": "green",
+        "name": "check",
+        "options": []
+      }
+    },
+    "9f981d8722b1425cb585261e410dcfc8": {
+      "model_name": "LeafletMarkerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "icon": "IPY_MODEL_493bba6812944e3c8d66e79d7fe1cb8f",
+        "location": [
+          0.0,
+          0.0
+        ],
+        "options": [
+          "alt",
+          "draggable",
+          "keyboard",
+          "rise_offset",
+          "rise_on_hover",
+          "rotation_angle",
+          "rotation_origin",
+          "title",
+          "z_index_offset"
+        ]
+      }
+    },
+    "cec67f75ac2a4060b4ba873884a4cb0f": {
+      "model_name": "LeafletSearchControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "found_style": {
+          "fillColor": "#3f0",
+          "color": "#0f0"
+        },
+        "marker": "IPY_MODEL_9f981d8722b1425cb585261e410dcfc8",
+        "options": [
+          "animate_location",
+          "auto_collapse",
+          "auto_type",
+          "found_style",
+          "jsonp_param",
+          "position",
+          "property_loc",
+          "property_name",
+          "url",
+          "zoom"
+        ],
+        "property_loc": [
+          "lat",
+          "lon"
+        ],
+        "url": "https://nominatim.openstreetmap.org/search?format=json&q={s}",
+        "zoom": 5
+      }
+    },
+    "bb4d8506117c483191962fd6b8e75d3d": {
+      "model_name": "LeafletZoomControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "zoom_in_text",
+          "zoom_in_title",
+          "zoom_out_text",
+          "zoom_out_title"
+        ]
+      }
+    },
+    "fda8741ef7214fe9ac2408389dace719": {
+      "model_name": "LeafletScaleControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "imperial",
+          "max_width",
+          "metric",
+          "position",
+          "update_when_idle"
+        ],
+        "position": "bottomleft"
+      }
+    },
+    "acc43eb10d924aefaf251a3462431e49": {
+      "model_name": "LeafletFullScreenControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ]
+      }
+    },
+    "62369605527245db8946d093e4810948": {
+      "model_name": "LeafletMeasureControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "_custom_units": {},
+        "active_color": "orange",
+        "options": [
+          "active_color",
+          "capture_z_index",
+          "completed_color",
+          "popup_options",
+          "position",
+          "primary_area_unit",
+          "primary_length_unit",
+          "secondary_area_unit",
+          "secondary_length_unit"
+        ],
+        "popup_options": {
+          "className": "leaflet-measure-resultpopup",
+          "autoPanPadding": [
+            10,
+            10
+          ]
+        },
+        "position": "bottomleft",
+        "primary_length_unit": "kilometers"
+      }
+    },
+    "805309fe3ded475aa0eabf2ceb6d534e": {
+      "model_name": "LeafletAttributionControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "prefix"
+        ],
+        "position": "bottomright"
+      }
+    },
+    "7a7f8c0f844d43d3bbb1490067b41f54": {
+      "model_name": "LeafletDrawControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "circle": {
+          "shapeOptions": {
+            "color": "#3388ff"
+          }
+        },
+        "circlemarker": {},
+        "data": [],
+        "marker": {
+          "shapeOptions": {
+            "color": "#3388ff"
+          }
+        },
+        "options": [
+          "position"
+        ],
+        "polygon": {
+          "shapeOptions": {}
+        },
+        "polyline": {
+          "shapeOptions": {}
+        },
+        "rectangle": {
+          "shapeOptions": {
+            "color": "#3388ff"
+          }
+        }
+      }
+    },
+    "2afd4948bb99455383fb22542452b394": {
+      "model_name": "LeafletDrawControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "circle": {
+          "shapeOptions": {
+            "color": "#3388ff"
+          }
+        },
+        "circlemarker": {},
+        "data": [],
+        "edit": false,
+        "marker": {},
+        "options": [
+          "position"
+        ],
+        "polygon": {},
+        "polyline": {},
+        "rectangle": {
+          "shapeOptions": {
+            "color": "#3388ff"
+          }
+        },
+        "remove": false
+      }
+    },
+    "8f2a0c2437404fad9de184fea253b191": {
+      "model_name": "LeafletMarkerClusterModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "markers": [],
+        "name": "Marker Cluster",
+        "options": [
+          "disable_clustering_at_zoom",
+          "max_cluster_radius"
+        ]
+      }
+    },
+    "7e4fe1f8b1d04592b8065a01cad482a0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "border": "1px solid black"
+      }
+    },
+    "a93a2ce9c736495f8aec9e46719e72f4": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_7e4fe1f8b1d04592b8065a01cad482a0",
+        "outputs": []
+      }
+    },
+    "38cf94293f9149e4a131407415ab112b": {
+      "model_name": "LeafletWidgetControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "transparent_bg"
+        ],
+        "position": "topright",
+        "widget": "IPY_MODEL_a93a2ce9c736495f8aec9e46719e72f4"
+      }
+    },
+    "2da7f43f4ff14946941c534865590e13": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "016a3788da2747e283581f1c9fe96b6a": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_2da7f43f4ff14946941c534865590e13",
+        "outputs": [
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "VBox(children=(ToggleButtons(options=('HTML', 'PNG', 'JPG'), tooltips=('Save the map as an HTML file', 'Take a\u2026",
+              "application/vnd.jupyter.widget-view+json": {
+                "version_major": 2,
+                "version_minor": 0,
+                "model_id": "14d65e0d98894f33b95747d26cd959bd"
+              }
+            },
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "e9ec29f0ab9a4599ba88847d980146e4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "14d65e0d98894f33b95747d26cd959bd": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_f83235c05ced40ee9c313f4c7ecfcf2e",
+          "IPY_MODEL_464e5671090f4df6982d939360d3f309",
+          "IPY_MODEL_ce488f3342f74d26af1d8880ca3deec6"
+        ],
+        "layout": "IPY_MODEL_e9ec29f0ab9a4599ba88847d980146e4"
+      }
+    },
+    "4f236d32883243ffbeebb4b4337416d1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0dba4d7b7c2d40e9920e74282cefbf4b": {
+      "model_name": "ToggleButtonsStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "f83235c05ced40ee9c313f4c7ecfcf2e": {
+      "model_name": "ToggleButtonsModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [
+          "HTML",
+          "PNG",
+          "JPG"
+        ],
+        "icons": [],
+        "index": 0,
+        "layout": "IPY_MODEL_4f236d32883243ffbeebb4b4337416d1",
+        "style": "IPY_MODEL_0dba4d7b7c2d40e9920e74282cefbf4b",
+        "tooltips": [
+          "Save the map as an HTML file",
+          "Take a screenshot and save as a PNG file",
+          "Take a screenshot and save as a JPG file"
+        ]
+      }
+    },
+    "192bb4e7c23d496590e2f7c330d849c2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "grid_area": "pathlist",
+        "width": "auto"
+      }
+    },
+    "d3a7315ff24c4032b2178c3e56100854": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "eaec19de806e4e5b9b1ad42e34e0d258": {
+      "model_name": "DropdownModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [
+          "C:\\Users\\DIAGNE\\GEE",
+          "C:\\Users\\DIAGNE",
+          "C:\\Users",
+          "C:\\",
+          "D:\\"
+        ],
+        "index": 0,
+        "layout": "IPY_MODEL_192bb4e7c23d496590e2f7c330d849c2",
+        "style": "IPY_MODEL_d3a7315ff24c4032b2178c3e56100854"
+      }
+    },
+    "a42d96fea07741c390b9716b87371c07": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "grid_area": "filename",
+        "width": "auto"
+      }
+    },
+    "3cfa7f625a784ab68fe4ec4aa6839046": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cd00643c8af3472cbdca182bc05875d0": {
+      "model_name": "TextModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_a42d96fea07741c390b9716b87371c07",
+        "placeholder": "output filename",
+        "style": "IPY_MODEL_3cfa7f625a784ab68fe4ec4aa6839046",
+        "value": "my_map.html"
+      }
+    },
+    "710381251e8e403a9ff94c06a087e2e1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "grid_area": "dircontent",
+        "width": "auto"
+      }
+    },
+    "c96be6836b9449308e8738d5f2f7d400": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "d81d843135d54f429bf8bdbe5f3c9fd5": {
+      "model_name": "SelectModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [
+          "\ud83d\udcc1 ..",
+          "\ud83d\udcc1 dp-cache",
+          "Add_polygon_vector_get_aoi.ipynb",
+          "gee_upload_data.ipynb"
+        ],
+        "layout": "IPY_MODEL_710381251e8e403a9ff94c06a087e2e1",
+        "rows": 8,
+        "style": "IPY_MODEL_c96be6836b9449308e8738d5f2f7d400"
+      }
+    },
+    "40a1c2559f794d42a8fd99e1fb78d45d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "display": "none",
+        "width": "auto"
+      }
+    },
+    "0a91ed66a42b407084e7fbc33cf2cf5f": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e60b98ff13644c1eb92d33a5170c3a15": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "Cancel",
+        "layout": "IPY_MODEL_40a1c2559f794d42a8fd99e1fb78d45d",
+        "style": "IPY_MODEL_0a91ed66a42b407084e7fbc33cf2cf5f"
+      }
+    },
+    "4ada9e3579374d9881c8e995060e4b9b": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "auto"
+      }
+    },
+    "9b36f6bd2cc9459a9f9313aee8dcfb19": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "6cee43e28d9342f09a5c83236488378c": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "description": "Change",
+        "layout": "IPY_MODEL_4ada9e3579374d9881c8e995060e4b9b",
+        "style": "IPY_MODEL_9b36f6bd2cc9459a9f9313aee8dcfb19"
+      }
+    },
+    "87bd6db006874daab63d6fc61ec72e7f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "display": "none"
+      }
+    },
+    "6544797a26674e41b2a5b0bf5c8ef824": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "dd6cd0723dc642bb92c8fb626e90006d": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_87bd6db006874daab63d6fc61ec72e7f",
+        "style": "IPY_MODEL_6544797a26674e41b2a5b0bf5c8ef824"
+      }
+    },
+    "b4ca909368184e4aa1a8702f9d627712": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5a48c016012d471899bd44024733277f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "9c7f3323619a406684f958d1cc39b489": {
+      "model_name": "HTMLModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_b4ca909368184e4aa1a8702f9d627712",
+        "placeholder": "",
+        "style": "IPY_MODEL_5a48c016012d471899bd44024733277f",
+        "value": "<span style=\"margin-left:10px; color:green;\">C:\\Users\\DIAGNE\\GEE\\my_map.html</span>"
+      }
+    },
+    "d5c38be529124d26931d9c2d4dcf3193": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "display": "none",
+        "grid_gap": "0px 0px",
+        "grid_template_areas": "\n                    'pathlist filename'\n                    'dircontent dircontent'\n                    ",
+        "grid_template_columns": "60% 40%",
+        "grid_template_rows": "auto auto",
+        "width": "500px"
+      }
+    },
+    "817291a3a3e545a39195b44145e38c28": {
+      "model_name": "GridBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_eaec19de806e4e5b9b1ad42e34e0d258",
+          "IPY_MODEL_cd00643c8af3472cbdca182bc05875d0",
+          "IPY_MODEL_d81d843135d54f429bf8bdbe5f3c9fd5"
+        ],
+        "layout": "IPY_MODEL_d5c38be529124d26931d9c2d4dcf3193"
+      }
+    },
+    "a2cfc1469b7f4cf58b00a6b3864ae7d3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "auto"
+      }
+    },
+    "78a83f10e55e4289962e906c2853bbec": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_6cee43e28d9342f09a5c83236488378c",
+          "IPY_MODEL_e60b98ff13644c1eb92d33a5170c3a15",
+          "IPY_MODEL_9c7f3323619a406684f958d1cc39b489"
+        ],
+        "layout": "IPY_MODEL_a2cfc1469b7f4cf58b00a6b3864ae7d3"
+      }
+    },
+    "13e8a42b3a7147e4b53b17993f101e7d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "width": "auto"
+      }
+    },
+    "464e5671090f4df6982d939360d3f309": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_dd6cd0723dc642bb92c8fb626e90006d",
+          "IPY_MODEL_817291a3a3e545a39195b44145e38c28",
+          "IPY_MODEL_78a83f10e55e4289962e906c2853bbec"
+        ],
+        "layout": "IPY_MODEL_13e8a42b3a7147e4b53b17993f101e7d"
+      }
+    },
+    "37f2cd08a4704cc9bbaa5b9c344c65fd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "cc6234c25d6949af954436624301eea9": {
+      "model_name": "ToggleButtonsStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ce488f3342f74d26af1d8880ca3deec6": {
+      "model_name": "ToggleButtonsModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_options_labels": [
+          "OK",
+          "Cancel"
+        ],
+        "button_style": "primary",
+        "icons": [],
+        "index": 0,
+        "layout": "IPY_MODEL_37f2cd08a4704cc9bbaa5b9c344c65fd",
+        "style": "IPY_MODEL_cc6234c25d6949af954436624301eea9",
+        "tooltips": [
+          "OK",
+          "Cancel"
+        ]
+      }
+    },
+    "4f56434b013b46d48c996cf7b4d57c5a": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "4cebb1f26e074d51a69e7d9b64f32b71": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "536b3b29ffda48d3bc4e89b2cafe8f61": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "info",
+        "layout": "IPY_MODEL_4f56434b013b46d48c996cf7b4d57c5a",
+        "style": "IPY_MODEL_4cebb1f26e074d51a69e7d9b64f32b71",
+        "tooltip": "Inspector"
+      }
+    },
+    "4e1b6de2aede4f5ea4f89faf288797e8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "6a29d04d3edf4024a34b8ad11d6cbb85": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "86b9a4b3d59b44d5af3c39239563917e": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "bar-chart",
+        "layout": "IPY_MODEL_4e1b6de2aede4f5ea4f89faf288797e8",
+        "style": "IPY_MODEL_6a29d04d3edf4024a34b8ad11d6cbb85",
+        "tooltip": "Plotting"
+      }
+    },
+    "6fbb5b80738f45e996981ba0f38bee5d": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "262bc3225286429eb6f5e21fa0b6106c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "56cc9135cb5848d9818e901fa6331979": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "camera",
+        "layout": "IPY_MODEL_6fbb5b80738f45e996981ba0f38bee5d",
+        "style": "IPY_MODEL_262bc3225286429eb6f5e21fa0b6106c",
+        "tooltip": "Save map as HTML or image",
+        "value": true
+      }
+    },
+    "87cf502a389b4cea9af6cc1ff41e04d4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "b921378a3e8e4b1b8986e2ab6f5ad60f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "23b91000dab84a7ab800d9160c91cc98": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "eraser",
+        "layout": "IPY_MODEL_87cf502a389b4cea9af6cc1ff41e04d4",
+        "style": "IPY_MODEL_b921378a3e8e4b1b8986e2ab6f5ad60f",
+        "tooltip": "Remove all drawn features"
+      }
+    },
+    "e0e8f4d35e9c48c2bc2d0ec1f02cb901": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "ac0b0390ad7e4133875a488b77e5759d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c7be8c74355341c4ad172adeb6cc448d": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "folder-open",
+        "layout": "IPY_MODEL_e0e8f4d35e9c48c2bc2d0ec1f02cb901",
+        "style": "IPY_MODEL_ac0b0390ad7e4133875a488b77e5759d",
+        "tooltip": "Open local vector/raster data"
+      }
+    },
+    "4882e899f61648ce93243d68e8918da2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "f15986589b694d7795f29d8a24c166e2": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "8561000a31aa445faa8401f3427f913e": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "retweet",
+        "layout": "IPY_MODEL_4882e899f61648ce93243d68e8918da2",
+        "style": "IPY_MODEL_f15986589b694d7795f29d8a24c166e2",
+        "tooltip": "Convert Earth Engine JavaScript to Python"
+      }
+    },
+    "46e9883d8cff42548da577756993c135": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "7ca98e3571b04a979eaead5e646016a8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "ca55251cf3074fb5930fb13a6ada4548": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "gears",
+        "layout": "IPY_MODEL_46e9883d8cff42548da577756993c135",
+        "style": "IPY_MODEL_7ca98e3571b04a979eaead5e646016a8",
+        "tooltip": "WhiteboxTools for local geoprocessing"
+      }
+    },
+    "d2bd598617e3400684b6d8d16e87f759": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "07851c1199d34b7093256b3b6f439f1a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "863cad7506b144d98266d4cdf79b4356": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "google",
+        "layout": "IPY_MODEL_d2bd598617e3400684b6d8d16e87f759",
+        "style": "IPY_MODEL_07851c1199d34b7093256b3b6f439f1a",
+        "tooltip": "GEE Toolbox for cloud computing"
+      }
+    },
+    "690e3655fab249599e84c040d9e77cc8": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "6f2c1f6c209c4cc787ece20182b833b8": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "cbf082384f0240c39973b0b6576c95a5": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "map",
+        "layout": "IPY_MODEL_690e3655fab249599e84c040d9e77cc8",
+        "style": "IPY_MODEL_6f2c1f6c209c4cc787ece20182b833b8",
+        "tooltip": "Change basemap"
+      }
+    },
+    "5cbb030fce044b4fbc608f477c92a382": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "a528a60e57b24bc6a9d9893d794cf8a5": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a6ecfc3649a04d3792e4ae4addb856c7": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "globe",
+        "layout": "IPY_MODEL_5cbb030fce044b4fbc608f477c92a382",
+        "style": "IPY_MODEL_a528a60e57b24bc6a9d9893d794cf8a5",
+        "tooltip": "Create timelapse"
+      }
+    },
+    "8b8f9d07990f462cb7172028335ff7d2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "58b851f11a494762b69e1665b789db4d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a44722d7ad00416cb122077821c6db4c": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "fast-forward",
+        "layout": "IPY_MODEL_8b8f9d07990f462cb7172028335ff7d2",
+        "style": "IPY_MODEL_58b851f11a494762b69e1665b789db4d",
+        "tooltip": "Activate timeslider"
+      }
+    },
+    "c6b840f1ddf14329b10905d4926e06ec": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "6120b53213b14acba3f00807b1ca608d": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "5e2eba42ae794aadb37869a6d2121438": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "hand-o-up",
+        "layout": "IPY_MODEL_c6b840f1ddf14329b10905d4926e06ec",
+        "style": "IPY_MODEL_6120b53213b14acba3f00807b1ca608d",
+        "tooltip": "Collect training samples"
+      }
+    },
+    "707b7e0cf7c345a28b966c73cfb8ffb6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "6865a62f472e4f93af4283b508409b8f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c2c05b69c712427cb833e6aa95502b34": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "line-chart",
+        "layout": "IPY_MODEL_707b7e0cf7c345a28b966c73cfb8ffb6",
+        "style": "IPY_MODEL_6865a62f472e4f93af4283b508409b8f",
+        "tooltip": "Creating and plotting transects"
+      }
+    },
+    "f8ba75c3b3ca45969c3e1577ba52e4a0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "40a333faea30435ca23e6dd4e475599c": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "a1542991e0664314ab0036e078707c44": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "random",
+        "layout": "IPY_MODEL_f8ba75c3b3ca45969c3e1577ba52e4a0",
+        "style": "IPY_MODEL_40a333faea30435ca23e6dd4e475599c",
+        "tooltip": "Sankey plots"
+      }
+    },
+    "1bcf8626780c4634a7bf3fc398859746": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "82d45c73a8744ffd9c4bd303b0207fec": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "3e10eadf019346d3bbc17547cce2a0e1": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "adjust",
+        "layout": "IPY_MODEL_1bcf8626780c4634a7bf3fc398859746",
+        "style": "IPY_MODEL_82d45c73a8744ffd9c4bd303b0207fec",
+        "tooltip": "Planet imagery"
+      }
+    },
+    "a7ccd59a53cf4652b9796ba00c83d8c1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "b5ffb32f93714c09ae6eceae8f924d3a": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "91ed7b55bf454821a91b91a59d6a9a22": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "smile-o",
+        "layout": "IPY_MODEL_a7ccd59a53cf4652b9796ba00c83d8c1",
+        "style": "IPY_MODEL_b5ffb32f93714c09ae6eceae8f924d3a",
+        "tooltip": "This is a placehold"
+      }
+    },
+    "0996a33d5eae467f9c191c30806ef7cd": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "a11d1816dca146e084f4e0cc219c571f": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "606aaded415d4ca2ba0fc77f59da2847": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "spinner",
+        "layout": "IPY_MODEL_0996a33d5eae467f9c191c30806ef7cd",
+        "style": "IPY_MODEL_a11d1816dca146e084f4e0cc219c571f",
+        "tooltip": "This is a placehold"
+      }
+    },
+    "bd5917a4f26f4a3ab6ad7750a139ba77": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "auto",
+        "padding": "0px 0px 0px 4px",
+        "width": "auto"
+      }
+    },
+    "7c2e944aad5442d6a86cfbbef65e9bbe": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "970489dadb924a718311974e6cf8242f": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "primary",
+        "icon": "question",
+        "layout": "IPY_MODEL_bd5917a4f26f4a3ab6ad7750a139ba77",
+        "style": "IPY_MODEL_7c2e944aad5442d6a86cfbbef65e9bbe",
+        "tooltip": "Get help"
+      }
+    },
+    "07e16e30af3546f8ae302c228ae9f3e5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "grid_gap": "1px 1px",
+        "grid_template_columns": "32px 32px 32px ",
+        "grid_template_rows": "32px 32px 32px 32px 32px 32px ",
+        "padding": "5px",
+        "width": "107px"
+      }
+    },
+    "629c662be2134f7a9bdefdf4ecb8f2fb": {
+      "model_name": "GridBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_536b3b29ffda48d3bc4e89b2cafe8f61",
+          "IPY_MODEL_86b9a4b3d59b44d5af3c39239563917e",
+          "IPY_MODEL_56cc9135cb5848d9818e901fa6331979",
+          "IPY_MODEL_23b91000dab84a7ab800d9160c91cc98",
+          "IPY_MODEL_c7be8c74355341c4ad172adeb6cc448d",
+          "IPY_MODEL_8561000a31aa445faa8401f3427f913e",
+          "IPY_MODEL_ca55251cf3074fb5930fb13a6ada4548",
+          "IPY_MODEL_863cad7506b144d98266d4cdf79b4356",
+          "IPY_MODEL_cbf082384f0240c39973b0b6576c95a5",
+          "IPY_MODEL_a6ecfc3649a04d3792e4ae4addb856c7",
+          "IPY_MODEL_a44722d7ad00416cb122077821c6db4c",
+          "IPY_MODEL_5e2eba42ae794aadb37869a6d2121438",
+          "IPY_MODEL_c2c05b69c712427cb833e6aa95502b34",
+          "IPY_MODEL_a1542991e0664314ab0036e078707c44",
+          "IPY_MODEL_3e10eadf019346d3bbc17547cce2a0e1",
+          "IPY_MODEL_91ed7b55bf454821a91b91a59d6a9a22",
+          "IPY_MODEL_606aaded415d4ca2ba0fc77f59da2847",
+          "IPY_MODEL_970489dadb924a718311974e6cf8242f"
+        ],
+        "layout": "IPY_MODEL_07e16e30af3546f8ae302c228ae9f3e5"
+      }
+    },
+    "450c61163ef44b828a4b7359fb375dc0": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "28px",
+        "padding": "0px 0px 0px 4px",
+        "width": "28px"
+      }
+    },
+    "5f1be658c7094b6583b64c74ac7d2563": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "e61b9562edb14272b11b339e539f8141": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "wrench",
+        "layout": "IPY_MODEL_450c61163ef44b828a4b7359fb375dc0",
+        "style": "IPY_MODEL_5f1be658c7094b6583b64c74ac7d2563",
+        "tooltip": "Toolbar"
+      }
+    },
+    "a3b1c2384ed94c528f7b674d09acf23c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "28px",
+        "width": "72px"
+      }
+    },
+    "02c710208fbb4fffa4485114ae592350": {
+      "model_name": "DescriptionStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "1e1517dc406e479188f09c72c672791b": {
+      "model_name": "ToggleButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "icon": "server",
+        "layout": "IPY_MODEL_a3b1c2384ed94c528f7b674d09acf23c",
+        "style": "IPY_MODEL_02c710208fbb4fffa4485114ae592350",
+        "tooltip": "Layers"
+      }
+    },
+    "bec3ffd96cfa4dc190406b6352eef784": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c992ee07dbc84bfbb0614969a2c506c3": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "_view_count": 1,
+        "children": [
+          "IPY_MODEL_e61b9562edb14272b11b339e539f8141"
+        ],
+        "layout": "IPY_MODEL_bec3ffd96cfa4dc190406b6352eef784"
+      }
+    },
+    "11474d969a3046728a863713ebd372f6": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "0afafbe9a5af446a9e16d04d45403ce2": {
+      "model_name": "HBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_1e1517dc406e479188f09c72c672791b",
+          "IPY_MODEL_e61b9562edb14272b11b339e539f8141"
+        ],
+        "layout": "IPY_MODEL_11474d969a3046728a863713ebd372f6"
+      }
+    },
+    "777c70eec4d54b169b5a0c067d70b628": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a23b3267c9c54acda86b0225a743433a": {
+      "model_name": "VBoxModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "children": [
+          "IPY_MODEL_629c662be2134f7a9bdefdf4ecb8f2fb"
+        ],
+        "layout": "IPY_MODEL_777c70eec4d54b169b5a0c067d70b628"
+      }
+    },
+    "a191164ed19247988f622811a6296d36": {
+      "model_name": "EventModel",
+      "model_module": "ipyevents",
+      "model_module_version": "1.9.0",
+      "state": {
+        "_supported_key_events": [
+          "keydown",
+          "keyup"
+        ],
+        "_supported_mouse_events": [
+          "click",
+          "auxclick",
+          "dblclick",
+          "mouseenter",
+          "mouseleave",
+          "mousedown",
+          "mouseup",
+          "mousemove",
+          "wheel",
+          "contextmenu",
+          "dragstart",
+          "drag",
+          "dragend",
+          "dragenter",
+          "dragover",
+          "dragleave",
+          "drop"
+        ],
+        "_supported_touch_events": [
+          "touchstart",
+          "touchend",
+          "touchmove",
+          "touchcancel"
+        ],
+        "source": "IPY_MODEL_c992ee07dbc84bfbb0614969a2c506c3",
+        "watched_events": [
+          "mouseenter",
+          "mouseleave"
+        ],
+        "xy": []
+      }
+    },
+    "cbf428fbfd164b979ba8c0197db9710f": {
+      "model_name": "LeafletWidgetControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "transparent_bg"
+        ],
+        "position": "topright",
+        "widget": "IPY_MODEL_c992ee07dbc84bfbb0614969a2c506c3"
+      }
+    },
+    "59ecb6ae02dd444385388e1b7e5ce7d9": {
+      "model_name": "LeafletWidgetControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "transparent_bg"
+        ],
+        "position": "topright",
+        "widget": "IPY_MODEL_016a3788da2747e283581f1c9fe96b6a"
+      }
+    },
+    "3134b70e0ec84296892240c33634a34d": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google Earth Engine",
+        "name": "VIIRS map",
+        "opacity": 0.7,
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/4161a517088636bea4c4552912308720-dd8a350f24f83229c2d5f5d32f46ffac/tiles/{z}/{x}/{y}"
+      }
+    },
+    "ee0f2fb9369a4fe79e646d897e69b647": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "border": "1px solid black"
+      }
+    },
+    "f03a2563a7a8466596e71fbe89f6a8a9": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_ee0f2fb9369a4fe79e646d897e69b647",
+        "outputs": [
+          {
+            "output_type": "stream",
+            "text": "Upload shapefile or \ngeojson as a zip file\n",
+            "name": "stdout"
+          },
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "FileUpload(value={}, accept='.zip, .json, .geojson, .shp', button_style='primary', description='Upload data')",
+              "application/vnd.jupyter.widget-view+json": {
+                "version_major": 2,
+                "version_minor": 0,
+                "model_id": "ad9a46f954414a8580bd7d4c3f607e91"
+              }
+            },
+            "metadata": {}
+          },
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "Button(button_style='success', description='Display data', style=ButtonStyle(), tooltip='Click me')",
+              "application/vnd.jupyter.widget-view+json": {
+                "version_major": 2,
+                "version_minor": 0,
+                "model_id": "a30179055c004cea95346a378a44c8c5"
+              }
+            },
+            "metadata": {}
+          },
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "Button(button_style='warning', description='Reset', style=ButtonStyle(), tooltip='Click me')",
+              "application/vnd.jupyter.widget-view+json": {
+                "version_major": 2,
+                "version_minor": 0,
+                "model_id": "5f511b807b8146a9be89a6fda389ce5a"
+              }
+            },
+            "metadata": {}
+          },
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "Button(button_style='warning', description='Plotting', style=ButtonStyle(), tooltip='Click me')",
+              "application/vnd.jupyter.widget-view+json": {
+                "version_major": 2,
+                "version_minor": 0,
+                "model_id": "c4e11c2b75294f7288c30bd29b966a1e"
+              }
+            },
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "4ff035dffc994c54b0f42d6cd6a30e49": {
+      "model_name": "LeafletWidgetControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "transparent_bg"
+        ],
+        "position": "bottomright",
+        "widget": "IPY_MODEL_f03a2563a7a8466596e71fbe89f6a8a9"
+      }
+    },
+    "2053fa1a1ba14930a872a77a188027b2": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "760e77dee9704935bd5358963f57262c": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "ad9a46f954414a8580bd7d4c3f607e91": {
+      "model_name": "FileUploadModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "accept": ".zip, .json, .geojson, .shp",
+        "button_style": "primary",
+        "data": [
+          null
+        ],
+        "description": "Upload data",
+        "layout": "IPY_MODEL_760e77dee9704935bd5358963f57262c",
+        "metadata": [
+          {
+            "name": "arrondissements-93-seine-saint-denis.geojson",
+            "type": "",
+            "size": 9261,
+            "lastModified": 1539670341000
+          }
+        ],
+        "style": "IPY_MODEL_2053fa1a1ba14930a872a77a188027b2"
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "data",
+            0
+          ],
+          "data": "eyJ0eXBlIjoiRmVhdHVyZUNvbGxlY3Rpb24iLCJmZWF0dXJlcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9seWdvbiIsImNvb3JkaW5hdGVzIjpbW1syLjQxMzQ5LDQ4LjkxOTI1XSxbMi40MTk0MSw0OC45MTcxM10sWzIuNDIzMyw0OC45MTYxNF0sWzIuNDI5MzcsNDguOTE0OTddLFsyLjQzMzQ2LDQ4LjkxMzY5XSxbMi40MzY5NSw0OC45MTMwNV0sWzIuNDQxMTYsNDguOTE1M10sWzIuNDQ1OTcsNDguOTEzOF0sWzIuNDQ5OTgsNDguOTEzMDhdLFsyLjQ1MzcxLDQ4LjkxMTYyXSxbMi40NTY1OSw0OC45MTA5OF0sWzIuNDYzNDcsNDguOTExOTNdLFsyLjQ2Njg5LDQ4LjkxNDE3XSxbMi40NjkwMSw0OC45MTQ0M10sWzIuNDczMTcsNDguOTE2MzJdLFsyLjQ3NTIxLDQ4LjkxNjRdLFsyLjQ3NDI3LDQ4LjkxODQzXSxbMi40NzY4OCw0OC45MjAxOF0sWzIuNDc5NCw0OC45MTk3N10sWzIuNDc5MTIsNDguOTE4NzhdLFsyLjQ4MjMzLDQ4LjkxODg3XSxbMi40ODU1Myw0OC45MTgyNF0sWzIuNDg4MTEsNDguOTE4NTldLFsyLjQ5MTMyLDQ4LjkxNzM0XSxbMi40OTIwNyw0OC45MTU5OF0sWzIuNDkwMzQsNDguOTA4OTNdLFsyLjQ5MzMzLDQ4LjkwNzA3XSxbMi40OTMzMyw0OC45MDU3N10sWzIuNDk3MDgsNDguOTA1NjhdLFsyLjQ5NzE1LDQ4LjkwNDY0XSxbMi40OTk4Miw0OC45MDQ1XSxbMi40OTgzNSw0OC44OTk2XSxbMi40OTY3OSw0OC44OTk2MV0sWzIuNDk1NjMsNDguODk2NjRdLFsyLjQ5OTg1LDQ4Ljg5NTc0XSxbMi40OTc4Niw0OC44OTMxN10sWzIuNDk1Niw0OC44ODkxOF0sWzIuNDkwNzYsNDguODkwNF0sWzIuNDg5OCw0OC44ODgzNF0sWzIuNDg3MjEsNDguODg4NDddLFsyLjQ4NjgsNDguODg3MDNdLFsyLjQ3NjY0LDQ4Ljg4ODY3XSxbMi40NzU0MSw0OC44ODYyOV0sWzIuNDcwMTcsNDguODg2NjldLFsyLjQ2ODg2LDQ4Ljg4MzgyXSxbMi40NjY2MSw0OC44ODE2Nl0sWzIuNDY2NjcsNDguODgwNDldLFsyLjQ2NDc2LDQ4Ljg3ODA3XSxbMi40Njc4Miw0OC44NzczNV0sWzIuNDY3MzQsNDguODc2MjZdLFsyLjQ2OTY1LDQ4Ljg3NDc4XSxbMi40NzA3Myw0OC44NzEyN10sWzIuNDcwNzMsNDguODY5NDddLFsyLjQ3MjA5LDQ4Ljg2NzU0XSxbMi40NzQwNiw0OC44NjcyN10sWzIuNDc4NjMsNDguODY4MzldLFsyLjQ4MjExLDQ4Ljg2NzAzXSxbMi40ODI5MSw0OC44NjQxNl0sWzIuNDgxNTMsNDguODYxNDFdLFsyLjQ4MDc4LDQ4Ljg2MDE1XSxbMi40NzU5Niw0OC44NjA0Ml0sWzIuNDczNTcsNDguODYwMjVdLFsyLjQ2ODI1LDQ4Ljg2MDddLFsyLjQ2Njc2LDQ4Ljg2MDAzXSxbMi40NjczLDQ4Ljg1NjY2XSxbMi40NTYwNCw0OC44NTU4Ml0sWzIuNDUzODYsNDguODU1NDZdLFsyLjQ0ODc0LDQ4Ljg1MzQ0XSxbMi40NDcxLDQ4Ljg1MTE2XSxbMi40NDQzOCw0OC44NTE3OF0sWzIuNDQyMTQsNDguODUyOTFdLFsyLjQzNTE4LDQ4Ljg1MzI4XSxbMi40MzQ0Myw0OC44NTA4NV0sWzIuNDI5NTMsNDguODUwOThdLFsyLjQyOTE4LDQ4Ljg0ODc0XSxbMi40MTkzMSw0OC44NDkzM10sWzIuNDE2MzQsNDguODQ5MjRdLFsyLjQxNDcxLDQ4Ljg1ODY1XSxbMi40MTM2Niw0OC44NjNdLFsyLjQxMzk0LDQ4Ljg3MDgzXSxbMi40MTIzOSw0OC44NzZdLFsyLjQwOTQ2LDQ4Ljg4MDFdLFsyLjQwNDA5LDQ4Ljg4MTRdLFsyLjQwMDIsNDguODgzODNdLFsyLjM5ODkxLDQ4Ljg4NTYzXSxbMi4zOTg0NCw0OC44OTA5NF0sWzIuMzk3NjIsNDguODk0NThdLFsyLjM5NDksNDguODk4NDRdLFsyLjM5MDMzLDQ4LjkwMTAxXSxbMi4zODk0NCw0OC45MDExNV0sWzIuNDAwMTcsNDguOTExMTJdLFsyLjQwNTI4LDQ4LjkwODZdLFsyLjQwODQ5LDQ4LjkwODExXSxbMi40MTEyOCw0OC45MTEwN10sWzIuNDA3NzUsNDguOTEzNTRdLFsyLjQwNDI3LDQ4LjkxNDg1XSxbMi40MDc1NSw0OC45MTc5MV0sWzIuNDEwMDYsNDguOTE2NjldLFsyLjQxMzQ5LDQ4LjkxOTI1XV1dfSwicHJvcGVydGllcyI6eyJjb2RlIjoiOTMwMDEiLCJub20iOiJCb2JpZ255In19LHsidHlwZSI6IkZlYXR1cmUiLCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9seWdvbiIsImNvb3JkaW5hdGVzIjpbW1syLjQwNzM4LDQ4Ljk1NjEyXSxbMi40MDk3MSw0OC45NTc5M10sWzIuNDEzMTgsNDguOTU3NzJdLFsyLjQxNzU1LDQ4Ljk1OTUxXSxbMi40MTg4NSw0OC45NTc3NV0sWzIuNDI1NDIsNDguOTU5MjJdLFsyLjQyODE2LDQ4Ljk1OTA0XSxbMi40MzIxOSw0OC45NTc2OF0sWzIuNDM1OTEsNDguOTU1MThdLFsyLjQzNzI1LDQ4Ljk1NTgxXSxbMi40NDUyMiw0OC45NTY4Ml0sWzIuNDUwMzQsNDguOTU0OTJdLFsyLjQ1NjAxLDQ4Ljk1NTc3XSxbMi40NTk0OSw0OC45NTUwNV0sWzIuNDYwODYsNDguOTU4NDZdLFsyLjQ2MzMyLDQ4Ljk1OTk5XSxbMi40NjczMyw0OC45NjQzM10sWzIuNDY5NDMsNDguOTYzMDVdLFsyLjQ3NTAyLDQ4Ljk2Nzc2XSxbMi40Nzc4MSw0OC45NjY3MV0sWzIuNDgwNzUsNDguOTY5ODJdLFsyLjQ4NjgzLDQ4Ljk2NzI5XSxbMi40OTAxMyw0OC45NzAxNl0sWzIuNDg4MjksNDguOTcxMTZdLFsyLjQ5Mjc0LDQ4Ljk3NDUzXSxbMi40OTYwMSw0OC45NzI3Ml0sWzIuNDk4MDksNDguOTczOTVdLFsyLjQ5NTg1LDQ4Ljk3NTAxXSxbMi41MDA1Miw0OC45NzUyOV0sWzIuNTAyMTUsNDguOTc2NTddLFsyLjUwMDQsNDguOTc3N10sWzIuNTAzNyw0OC45Nzk0N10sWzIuNTA0ODgsNDguOTc4OF0sWzIuNTA2NzIsNDguOTc5ODldLFsyLjUxMDUxLDQ4Ljk4MDY3XSxbMi41MTQ3Nyw0OC45ODIyNl0sWzIuNTEyNjUsNDguOTg1ODddLFsyLjUxNzAyLDQ4Ljk4NjE4XSxbMi41MTY4OSw0OC45ODc2Ml0sWzIuNTE4OTQsNDguOTg3NzRdLFsyLjUxODgyLDQ4Ljk5MDc2XSxbMi41MjA1Myw0OC45OTIwN10sWzIuNTIyOTIsNDguOTkxOTNdLFsyLjUyNDM3LDQ4Ljk5NjI1XSxbMi41Mjc4Nyw0OS4wMDAyOF0sWzIuNTMwNjEsNDkuMDAxODldLFsyLjUzMjI0LDQ5LjAwNTIyXSxbMi41MzU1LDQ5LjAwNjU2XSxbMi41MzU2NSw0OS4wMDUyOF0sWzIuNTQ0MDYsNDkuMDA1NTldLFsyLjU0NDI5LDQ5LjAwNDddLFsyLjU0Nzc3LDQ5LjAwNDg3XSxbMi41NDg4Miw0OS4wMDY2NV0sWzIuNTUzMDksNDkuMDA2NzddLFsyLjU1MzA2LDQ5LjAwOTgyXSxbMi41NTgxNCw0OS4wMTIwMV0sWzIuNTY1NzksNDkuMDEyNF0sWzIuNTY2MTksNDkuMDExMDVdLFsyLjU2ODc4LDQ5LjAxMTEzXSxbMi41NzA1NSw0OS4wMDc3XSxbMi41NjY4NSw0OS4wMDY5MV0sWzIuNTY0MzMsNDkuMDA3NDVdLFsyLjU2NDY2LDQ5LjAwNTY1XSxbMi41Njk1MSw0OS4wMDU3OF0sWzIuNTY5MDMsNDkuMDAzOTNdLFsyLjU3MTIyLDQ5LjAwNDE2XSxbMi41NzM0Niw0OS4wMDExXSxbMi41NzU4NCw0OS4wMDAyOV0sWzIuNTc3NTksNDguOTk1NzNdLFsyLjU4MDk5LDQ4Ljk5MDQ3XSxbMi41NzkzNCw0OC45OTAxNl0sWzIuNTgxNDQsNDguOTg1OTNdLFsyLjU3OTgsNDguOTg0NjZdLFsyLjU3Njc5LDQ4Ljk4NDEzXSxbMi41Nzg2OSw0OC45Nzk5NV0sWzIuNTc4NjgsNDguOTc5MTRdLFsyLjU3NDAzLDQ4Ljk3OTM3XSxbMi41NjkwNyw0OC45ODA0Ml0sWzIuNTYzNTIsNDguOTgwMzldLFsyLjU2MjQ4LDQ4Ljk3ODg2XSxbMi41NjU3Nyw0OC45NzYwNl0sWzIuNTcxOCw0OC45Njg2N10sWzIuNTc5MDEsNDguOTYyMDFdLFsyLjU4MzcyLDQ4Ljk1NzA1XSxbMi41ODU4OCw0OC45NTddLFsyLjU4OTgxLDQ4Ljk1MzQ0XSxbMi41OTIxMiw0OC45NDg2N10sWzIuNTkzNjEsNDguOTQ3MjhdLFsyLjU5MzQ3LDQ4Ljk0NTM5XSxbMi41OTU5Myw0OC45Mzg2MV0sWzIuNTk3NzEsNDguOTM4MDVdLFsyLjYwMTIyLDQ4LjkzODQ0XSxbMi42MDMxOSw0OC45Mzc1NF0sWzIuNjAyMDgsNDguOTM0NjJdLFsyLjYwMzE1LDQ4LjkzMDQ4XSxbMi42MDI2LDQ4LjkyOTM2XSxbMi41OTkyNCw0OC45MjgwMV0sWzIuNTk3MzksNDguOTI2NjddLFsyLjU5NDE4LDQ4LjkyNTc0XSxbMi41ODk2Nyw0OC45MjI2OV0sWzIuNTg4NzcsNDguOTIwOTRdLFsyLjU4OSw0OC45MTcyN10sWzIuNTkwNDUsNDguOTE1ODFdLFsyLjU5MDc1LDQ4LjkxMTg4XSxbMi41ODg4MSw0OC45MDk0OV0sWzIuNTkyMzcsNDguOTA3N10sWzIuNTg1NDIsNDguOTA0NjNdLFsyLjU4NDIsNDguOTAzMzVdLFsyLjU4NDcsNDguOTAyMTNdLFsyLjU4NzA4LDQ4Ljg5OTgxXSxbMi41ODcwMyw0OC44OTM5NV0sWzIuNTg1Myw0OC44OTM3OF0sWzIuNTgzODYsNDguODk0OTFdLFsyLjU3ODIzLDQ4Ljg5MzM3XSxbMi41NzY2Myw0OC44OTIyM10sWzIuNTc0MDIsNDguODkyNzRdLFsyLjU3MjIzLDQ4Ljg5MjVdLFsyLjU3MDE2LDQ4Ljg5MDM5XSxbMi41NjY4Miw0OC44OTA5Ml0sWzIuNTY0MTcsNDguODg5MTFdLFsyLjU2MTQ5LDQ4Ljg4ODg4XSxbMi41NjEzOSw0OC44ODc2M10sWzIuNTU5NDEsNDguODg2NDddLFsyLjU2MDM3LDQ4Ljg4NDE3XSxbMi41NjQ4Nyw0OC44ODE0NF0sWzIuNTY4NjIsNDguODgxNF0sWzIuNTcxMzcsNDguODc5N10sWzIuNTY5NzIsNDguODc1NDNdLFsyLjU2ODAxLDQ4Ljg3NDM1XSxbMi41NjgyLDQ4Ljg3MjE0XSxbMi41NzA2OCw0OC44NjkzNV0sWzIuNTY5MzYsNDguODY2MjRdLFsyLjU3MjQyLDQ4Ljg2Nzk0XSxbMi41NzU1MSw0OC44NjU5N10sWzIuNTc4MDIsNDguODY1MjFdLFsyLjU4NDQsNDguODY1NDZdLFsyLjU4NzMzLDQ4Ljg2NTAxXSxbMi41ODc5Myw0OC44NjM2MV0sWzIuNTg2MzUsNDguODYwMDFdLFsyLjU4MzU2LDQ4Ljg1ODIyXSxbMi41ODE3MSw0OC44NTgzNl0sWzIuNTgzMDYsNDguODU1NDNdLFsyLjU3Nzk0LDQ4Ljg1NDkxXSxbMi41NzM4NCw0OC44NTMzOF0sWzIuNTgwMDYsNDguODQzN10sWzIuNTg2NjMsNDguODMzOF0sWzIuNTg1NzIsNDguODMwNTddLFsyLjU4NTg1LDQ4LjgyODk1XSxbMi41ODcyNiw0OC44MjU2Nl0sWzIuNTkxNjUsNDguODI3NjddLFsyLjU5MjcxLDQ4LjgyNTM4XSxbMi41OTIzNyw0OC44MjM4MV0sWzIuNTk0Niw0OC44MjEyOV0sWzIuNTk0NDcsNDguODIwNjZdLFsyLjU5NTY1LDQ4LjgxMzU5XSxbMi41OTY0Niw0OC44MTA4OV0sWzIuNTk1MTQsNDguODA5MThdLFsyLjU5MjI4LDQ4LjgwNzQ0XSxbMi41OTAyNCw0OC44MDkwMV0sWzIuNTgyNDMsNDguODEwMjRdLFsyLjU3ODAxLDQ4LjgxMjExXSxbMi41NzQxMyw0OC44MTI5MV0sWzIuNTc0NTQsNDguODEzNjldLFsyLjU3MDA2LDQ4LjgxNTA0XSxbMi41Njg1LDQ4LjgxODI4XSxbMi41NzA5OCw0OC44MjI2OF0sWzIuNTcyMjEsNDguODIzNjZdLFsyLjU2ODEyLDQ4LjgyNDI2XSxbMi41NjEzMiw0OC44MjY0OF0sWzIuNTYwMzcsNDguODI4ODJdLFsyLjU1NzU4LDQ4LjgzMDA5XSxbMi41NTY2NSw0OC44MzEzNF0sWzIuNTU1MDEsNDguODMxMzRdLFsyLjU0NzQsNDguODM2MTFdLFsyLjU0NDE4LDQ4LjgzNDk5XSxbMi41MzgyLDQ4LjgzNjhdLFsyLjUzNjY1LDQ4LjgzODUxXSxbMi41NDAyNiw0OC44MzkzNF0sWzIuNTM3NDUsNDguODQxMTddLFsyLjUzNTYzLDQ4Ljg0MjldLFsyLjUzNDQzLDQ4Ljg0NTI4XSxbMi41Mjg3LDQ4Ljg0Mzc2XSxbMi41MjQ4NCw0OC44NDkwN10sWzIuNTE4OTgsNDguODQ4MThdLFsyLjUxNTY1LDQ4Ljg1MTM4XSxbMi41MTM2Nyw0OC44NTAxN10sWzIuNTExOTcsNDguODUyNDJdLFsyLjUwOTM4LDQ4Ljg1MzFdLFsyLjUwNjgsNDguODU1MDhdLFsyLjUwNTQ0LDQ4Ljg1NzE5XSxbMi41MDM5NCw0OC44NTczM10sWzIuNDk5NzIsNDguODU1NjhdLFsyLjQ5ODk3LDQ4Ljg1Njc1XSxbMi40OTY1Miw0OC44NTYwOV0sWzIuNDk0OTYsNDguODU4ODNdLFsyLjQ5NjQ3LDQ4Ljg1OTE5XSxbMi40OTYxMiw0OC44NjA3Nl0sWzIuNDkzOTUsNDguODYwNThdLFsyLjQ5MTYyLDQ4Ljg1OTY4XSxbMi40OTEwMSw0OC44NjA4MV0sWzIuNDg4NzUsNDguODYwNTVdLFsyLjQ4MTUzLDQ4Ljg2MTQxXSxbMi40ODI5MSw0OC44NjQxNl0sWzIuNDgyMTEsNDguODY3MDNdLFsyLjQ3ODYzLDQ4Ljg2ODM5XSxbMi40NzQwNiw0OC44NjcyN10sWzIuNDcyMDksNDguODY3NTRdLFsyLjQ3MDczLDQ4Ljg2OTQ3XSxbMi40NzA3Myw0OC44NzEyN10sWzIuNDY5NjUsNDguODc0NzhdLFsyLjQ2NzM0LDQ4Ljg3NjI2XSxbMi40Njc4Miw0OC44NzczNV0sWzIuNDY0NzYsNDguODc4MDddLFsyLjQ2NjY3LDQ4Ljg4MDQ5XSxbMi40NjY2MSw0OC44ODE2Nl0sWzIuNDY4ODYsNDguODgzODJdLFsyLjQ3MDE3LDQ4Ljg4NjY5XSxbMi40NzU0MSw0OC44ODYyOV0sWzIuNDc2NjQsNDguODg4NjddLFsyLjQ4NjgsNDguODg3MDNdLFsyLjQ4NzIxLDQ4Ljg4ODQ3XSxbMi40ODk4LDQ4Ljg4ODM0XSxbMi40OTA3Niw0OC44OTA0XSxbMi40OTU2LDQ4Ljg4OTE4XSxbMi40OTc4Niw0OC44OTMxN10sWzIuNDk5ODUsNDguODk1NzRdLFsyLjQ5NTYzLDQ4Ljg5NjY0XSxbMi40OTY3OSw0OC44OTk2MV0sWzIuNDk4MzUsNDguODk5Nl0sWzIuNDk5ODIsNDguOTA0NV0sWzIuNDk3MTUsNDguOTA0NjRdLFsyLjQ5NzA4LDQ4LjkwNTY4XSxbMi40OTMzMyw0OC45MDU3N10sWzIuNDkzMzMsNDguOTA3MDddLFsyLjQ5MDM0LDQ4LjkwODkzXSxbMi40OTIwNyw0OC45MTU5OF0sWzIuNDkxMzIsNDguOTE3MzRdLFsyLjQ4ODExLDQ4LjkxODU5XSxbMi40ODU1Myw0OC45MTgyNF0sWzIuNDgyMzMsNDguOTE4ODddLFsyLjQ3OTEyLDQ4LjkxODc4XSxbMi40Nzk0LDQ4LjkxOTc3XSxbMi40NzY4OCw0OC45MjAxOF0sWzIuNDc0MjcsNDguOTE4NDNdLFsyLjQ3NTIxLDQ4LjkxNjRdLFsyLjQ3MzE3LDQ4LjkxNjMyXSxbMi40NjkwMSw0OC45MTQ0M10sWzIuNDY2ODksNDguOTE0MTddLFsyLjQ2MzQ3LDQ4LjkxMTkzXSxbMi40NTY1OSw0OC45MTA5OF0sWzIuNDUzNzEsNDguOTExNjJdLFsyLjQ0OTk4LDQ4LjkxMzA4XSxbMi40NDU5Nyw0OC45MTM4XSxbMi40NDExNiw0OC45MTUzXSxbMi40MzY5NSw0OC45MTMwNV0sWzIuNDMzNDYsNDguOTEzNjldLFsyLjQyOTM3LDQ4LjkxNDk3XSxbMi40MjMzLDQ4LjkxNjE0XSxbMi40MTk0MSw0OC45MTcxM10sWzIuNDEzNDksNDguOTE5MjVdLFsyLjQxNjE2LDQ4LjkyMTU5XSxbMi40MjA0Niw0OC45Mjc2NV0sWzIuNDIwMzMsNDguOTI5NF0sWzIuNDE2MTEsNDguOTMwMzddLFsyLjQxMjM1LDQ4LjkzMjYxXSxbMi40MTY2Niw0OC45MzMwN10sWzIuNDEzOTcsNDguOTM2XSxbMi40MTY2Myw0OC45MzU2N10sWzIuNDE1OCw0OC45MzczMV0sWzIuNDE3NzUsNDguOTQwMDJdLFsyLjQxNzIsNDguOTQxMzJdLFsyLjQxMzMyLDQ4Ljk0MzQ0XSxbMi40MTI0Nyw0OC45NDQ1M10sWzIuNDA5MjUsNDguOTQ1OTZdLFsyLjQwODYyLDQ4Ljk0NzA2XSxbMi40MDU3NCw0OC45NDk2MV0sWzIuNDAzODQsNDguOTUxOTVdLFsyLjQwNzExLDQ4Ljk1MjM4XSxbMi40MDgyMSw0OC45NTMxN10sWzIuNDA2OTEsNDguOTU0Nl0sWzIuNDA3MzgsNDguOTU2MTJdXV19LCJwcm9wZXJ0aWVzIjp7ImNvZGUiOiI5MzAwMiIsIm5vbSI6IlJhaW5jeSJ9fSx7InR5cGUiOiJGZWF0dXJlIiwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvbHlnb24iLCJjb29yZGluYXRlcyI6W1tbMi40MDczOCw0OC45NTYxMl0sWzIuNDA2OTEsNDguOTU0Nl0sWzIuNDA4MjEsNDguOTUzMTddLFsyLjQwNzExLDQ4Ljk1MjM4XSxbMi40MDM4NCw0OC45NTE5NV0sWzIuNDA1NzQsNDguOTQ5NjFdLFsyLjQwODYyLDQ4Ljk0NzA2XSxbMi40MDkyNSw0OC45NDU5Nl0sWzIuNDEyNDcsNDguOTQ0NTNdLFsyLjQxMzMyLDQ4Ljk0MzQ0XSxbMi40MTcyLDQ4Ljk0MTMyXSxbMi40MTc3NSw0OC45NDAwMl0sWzIuNDE1OCw0OC45MzczMV0sWzIuNDE2NjMsNDguOTM1NjddLFsyLjQxMzk3LDQ4LjkzNl0sWzIuNDE2NjYsNDguOTMzMDddLFsyLjQxMjM1LDQ4LjkzMjYxXSxbMi40MTYxMSw0OC45MzAzN10sWzIuNDIwMzMsNDguOTI5NF0sWzIuNDIwNDYsNDguOTI3NjVdLFsyLjQxNjE2LDQ4LjkyMTU5XSxbMi40MTM0OSw0OC45MTkyNV0sWzIuNDEwMDYsNDguOTE2NjldLFsyLjQwNzU1LDQ4LjkxNzkxXSxbMi40MDQyNyw0OC45MTQ4NV0sWzIuNDA3NzUsNDguOTEzNTRdLFsyLjQxMTI4LDQ4LjkxMTA3XSxbMi40MDg0OSw0OC45MDgxMV0sWzIuNDA1MjgsNDguOTA4Nl0sWzIuNDAwMTcsNDguOTExMTJdLFsyLjM4OTQ0LDQ4LjkwMTE1XSxbMi4zODUxNSw0OC45MDIwMV0sWzIuMzcwMjksNDguOTAxNjVdLFsyLjM0ODM5LDQ4LjkwMTUzXSxbMi4zMjcyNiw0OC45MDEwN10sWzIuMzIwNjMsNDguOTAwOF0sWzIuMzE5ODgsNDguOTAwNDZdLFsyLjMxOTYxLDQ4LjkwMTMxXSxbMi4zMjA4OCw0OC45MDQ2NF0sWzIuMzE3OTYsNDguOTA3OTRdLFsyLjMxMzc2LDQ4LjkxNDAxXSxbMi4zMTk4Miw0OC45MTU5NF0sWzIuMzIyNjcsNDguOTE5MTldLFsyLjMyNTc1LDQ4LjkyMDU5XSxbMi4zMzI0Myw0OC45MjYzNF0sWzIuMzM0NjksNDguOTI5MTJdLFsyLjMzNjM1LDQ4LjkzMjM1XSxbMi4zMzY5Nyw0OC45MzUzNl0sWzIuMzM1NTYsNDguOTQwNjhdLFsyLjMzMjEsNDguOTQzNTldLFsyLjMyNjk3LDQ4Ljk0NTM2XSxbMi4zMjA2OSw0OC45NDY1M10sWzIuMzExNjcsNDguOTQ3OTVdLFsyLjMwMTk4LDQ4Ljk1MDE1XSxbMi4yOTA5Nyw0OC45NTA5N10sWzIuMjkyMjgsNDguOTUxMzldLFsyLjI4ODI1LDQ4Ljk1ODM1XSxbMi4yODg0Niw0OC45NTg5N10sWzIuMjg5ODIsNDguOTYxNDVdLFsyLjI5ODk2LDQ4Ljk2NjNdLFsyLjMwMTU2LDQ4Ljk2NTIzXSxbMi4zMDQ5Nyw0OC45NjIzMV0sWzIuMzA4OTQsNDguOTYzNTFdLFsyLjMxMDM3LDQ4Ljk2MTc1XSxbMi4zMTMxOCw0OC45NjIyMl0sWzIuMzE5MTgsNDguOTU4NjddLFsyLjMyMjgsNDguOTU3NTRdLFsyLjMyNTExLDQ4Ljk1ODA5XSxbMi4zMjc3Myw0OC45NTk2Nl0sWzIuMzMyOTcsNDguOTU1NTJdLFsyLjMzNDI3LDQ4Ljk1NjA0XSxbMi4zMzc5OSw0OC45NTk5OF0sWzIuMzM3NTMsNDguOTYwODRdLFsyLjMzOTY3LDQ4Ljk2MjY3XSxbMi4zNDQxLDQ4Ljk2ODI0XSxbMi4zNTE0Miw0OC45NjY2N10sWzIuMzUzOTMsNDguOTY1NzNdLFsyLjM1ODcyLDQ4Ljk3Mjc0XSxbMi4zNjAyMiw0OC45NzI1Ml0sWzIuMzYxNDksNDguOTczODRdLFsyLjM2NTI4LDQ4Ljk3MzAzXSxbMi4zNjYxNiw0OC45NzQxM10sWzIuMzY5NTIsNDguOTczMTRdLFsyLjM3ODM5LDQ4Ljk3MTY2XSxbMi4zODQ1NCw0OC45NzFdLFsyLjM4NDYzLDQ4Ljk3MDEzXSxbMi4zODg2OSw0OC45NjY3Nl0sWzIuMzkzNzUsNDguOTYzNDJdLFsyLjM5Nzk3LDQ4Ljk1OTg5XSxbMi40MDI0MSw0OC45NTc5M10sWzIuNDAzMjksNDguOTU4MDJdLFsyLjQwNzM4LDQ4Ljk1NjEyXV1dfSwicHJvcGVydGllcyI6eyJjb2RlIjoiOTMwMDMiLCJub20iOiJTYWludC1EZW5pcyJ9fV19"
+        }
+      ]
+    },
+    "a0dc681724fa4b969aeb6f7a1008e9a9": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "385839d6dcab4fe88f3ead3e040f5b69": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "a30179055c004cea95346a378a44c8c5": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "success",
+        "description": "Display data",
+        "layout": "IPY_MODEL_385839d6dcab4fe88f3ead3e040f5b69",
+        "style": "IPY_MODEL_a0dc681724fa4b969aeb6f7a1008e9a9",
+        "tooltip": "Click me"
+      }
+    },
+    "00f1c21bafe14f8ba3a4d9b4b6e249b4": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "559d32f66d0a41669a2e0b6c8f4b8e6e": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "5f511b807b8146a9be89a6fda389ce5a": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "warning",
+        "description": "Reset",
+        "layout": "IPY_MODEL_559d32f66d0a41669a2e0b6c8f4b8e6e",
+        "style": "IPY_MODEL_00f1c21bafe14f8ba3a4d9b4b6e249b4",
+        "tooltip": "Click me"
+      }
+    },
+    "449bbe2f051c426297dc41307a249921": {
+      "model_name": "ButtonStyleModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {}
+    },
+    "c141c15384cb44d8846685ec41ff0a4f": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "c4e11c2b75294f7288c30bd29b966a1e": {
+      "model_name": "ButtonModel",
+      "model_module": "@jupyter-widgets/controls",
+      "model_module_version": "1.5.0",
+      "state": {
+        "_dom_classes": [],
+        "button_style": "warning",
+        "description": "Plotting",
+        "layout": "IPY_MODEL_c141c15384cb44d8846685ec41ff0a4f",
+        "style": "IPY_MODEL_449bbe2f051c426297dc41307a249921",
+        "tooltip": "Click me"
+      }
+    },
+    "c0b2fcd75c4f4dde8f49e4be2e65b232": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "wait"
+      }
+    },
+    "13bd4b9025db4d5bb37f7c316f89d1a9": {
+      "model_name": "LeafletTileLayerModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "attribution": "Google Earth Engine",
+        "name": "Layer pii",
+        "options": [
+          "attribution",
+          "detect_retina",
+          "max_native_zoom",
+          "max_zoom",
+          "min_native_zoom",
+          "min_zoom",
+          "no_wrap",
+          "tile_size",
+          "tms"
+        ],
+        "url": "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/4ed1051452eb403860550db7cc10d20e-27aaa53d1cd60a358196a3bf155dc861/tiles/{z}/{x}/{y}"
+      }
+    },
+    "39b88bf270fe4c9cae31f9d911ae4a51": {
+      "model_name": "LeafletMapStyleModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "cursor": "pointer"
+      }
+    },
+    "c7de8f9886fc4ea2861c7a7184ec5212": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "border": "1px solid black"
+      }
+    },
+    "eb72101e16bb4e2f8250f37ad71e16e7": {
+      "model_name": "OutputModel",
+      "model_module": "@jupyter-widgets/output",
+      "model_module_version": "1.0.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_c7de8f9886fc4ea2861c7a7184ec5212",
+        "outputs": [
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "Canvas(toolbar=Toolbar(toolitems=[('Home', 'Reset original view', 'home', 'home'), ('Back', 'Back to previous \u2026",
+              "application/vnd.jupyter.widget-view+json": {
+                "version_major": 2,
+                "version_minor": 0,
+                "model_id": "e0ec23bef8294f17be58b888946b056d"
+              }
+            },
+            "metadata": {}
+          },
+          {
+            "output_type": "display_data",
+            "data": {
+              "text/plain": "<Figure size 750x300 with 1 Axes>",
+              "image/png": "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//zzqp9jy5Yt8u+4T58++Pe//231+dBqtXjjjTfQvXt3t449ceJEvPDCC1bH02g0eO211+TnP/30k4ejDw0uvfRS/PWvf7XanpWVhQcffBCAdA3bvn073nrrLfTp08dq31tuuUX+u//ll19kDbPI3//+dwDSKseiRYvsZlzvvvtueeXo66+/xsmTJz37wfyAqBefN28e8vLyrPaZOHEinnrqKbeOGx0dja+//lq2WhO55pprMHLkSACS3/Pp06fdHLWSI0eOyI/vuusuu/sxxjB69GivzhVpUDBLhARZWVm48cYb7b4uLrWZliNFPv74YwBAXl4ebrrpJofnmjBhglystWzZMrfHKhYOpaamuv1+Vxg4cKDDi52z+XCVESNGyI83bdrkdH/TF3KwIi5RP/TQQ4iNjbW77xNPPGHzfba45pprfL5Ee/fdd6NTp04ApJuzY8eOqXr877//Xn78wAMP2JVHREdH495773Xr2A8//LDd17p27Yp27doB8O6zGgo4sla76KKL5Mc5OTkOC0BHjRoFQJL2WBZp7ty5U+5E9cc//hHp6ekOx3TzzTcDkKRHthIBwcDRo0flz8bw4cMxZMgQu/ved999iIpyXUF5xRVXoHPnznZfV+taCiglB/v27fPqWIQS0swSIcHgwYMdag/F7GdVVZXitZqaGuzatQuAFMyKX9r2SExMBAAcOHDAk+H6HFsZahFH8yFy/PhxzJ07F6tWrcKBAwdQXV2NxsZGm/s6y0pERUU5HVeg2bx5s/x40qRJDvcdOHAgMjIyUFFRgS1btoBzbjeTbQoufEl0dDSee+453HrrrWhpacGMGTPwySefqHb83377TX7szKHA3ZalrnxeT5065fCzGg4MHTrU7ms5OTny40GDBkGjsZ9rEve1nLO1a9fKj41Go8I71xZnzpyRHwfr9c6dz2ZmZiZ69+6NnTt3unRsta6lrjBp0iT83//9HwBg+vTpePrpp3HNNdf4bPUukqBglggJnBUFid6ilsHYyZMn5WX/bdu2OS1kEqmsrHRjlBJiAYs3tkyO8GY+TPz3v//Fk08+KfuzOsNWK16R9PR0h5nOYKCkpER+XFBQ4HT/rl27oqKiAnV1daitrUVycrLN/fzVpOGmm27CK6+8gj179uCzzz7DX//6V6sCOk8R58aUAbaHo0yWLVz9vLr6WQxVxGuDJeLfrKP9LPe1/PsWrahee+01hYzDGZ5c7/yBO59NQPp8uhrMqnEtdZVLL70UN954Iz777DOUlZXhkUcewSOPPIKuXbti5MiRGDNmDC6//HKbkgfCMRTMEiGBoyyFM7ypCrWlR3NGbm4uNBoNjEYjGhsbUVxcrHqw4818AMCnn36KP//5z/Lz0aNHY+zYsejYsSOSkpJkHWlpaSnuueceAHDqWxsXF+fVmPyBqYo4KirKpeYKCQkJ8mNHway/fnaNRoMXXngB06ZNg9FoxNNPP43vvvtOlWOLc+Osba44L67g7ec1XHB1HgJ1vWtpafH4vb7E9NkEXPvsufP59Pdnc968eZgwYQL+7//+T5YtHD58GIcPH8bcuXOh1Wpx3XXX4d///rdNXTBhGwpmibDHJBkAJDNtZ8U8apyvX79+2L59OwBg/fr1uOaaa3x6TncxFYhERUXh+++/t1sQF24aRtNnQa/Xo7m52WnQZrJxAxA0HdmmTp2KYcOGYdOmTfj++++xceNGDB8+3OvjmgIAvV6PlpYWREdH292XOpEFL+L1btWqVRg7dmwAR6MOYnDqymcvmD+fjDHccccduOOOO3Ds2DGsW7cO69evl23SDAYDPv/8c6xbtw5btmxRSEoI+9DtMhH2iFnRPXv2+OWcl1xyifxYTV2jGhw7dkwuHpo2bZrdQBaA7AARLoiZDrGy2B6mfRISEoImmAWg8Jn929/+psoxxbkpKipyuK/axWeEeoj6S39d73yNO59NIHQ+n507d8att96K2bNn49ChQ9i6dSsGDBgAQPJWf/XVVwM8wtCBglki7MnKykLPnj0BAFu3bvVLgPbAAw/Ima3FixcrChgCzblz5+THXbp0cbivL6ySxGU9zrnqx3eEWIDz888/O9x3x44dKC8vByA1D3BkY+Zvxo8fLxewrVq1yiPXDUsGDx4sPza157WHs9fVJpCfmVBjzJgx8uOFCxcGcCTq4c5ns6Kiwq9BvJqfzYEDByqSH+vWrfPqeJEEBbNERHDrrbcCkC42Tz75pM/P165dO4XW9MYbb1QUMTjjyy+/xNdff+2TsYn2MJa2PiKnT5/2iSRDXAYVl/H9wfTp0+XHb7zxhsOCo1deecXm+4KFF198UX781FNPef1FOnXqVPnxW2+9ZVcj3dLSgtmzZ3t1LncJ5Gcm1Bg8eLB8875ixYqw8O4tKChAr169AAAbNmyw6Z1tYtasWR7VOniK2p/Njh07yo/9+XOEOhTMEhHBgw8+KHtZfvHFF/jTn/7kMJA5f/48Xn/9dafZO0e89tprGDRoEABJ4D98+HD8+OOPDt9z4MAB3HDDDbjhhhtQW1vr8bkd0bNnT/kC/N133ynsqkyUlpZi6tSpPhmDWI28bds21Y/viH79+skSkCNHjuDOO++0WfTyxhtv4PPPPwcAZGdne9zW2JcMHjxY9iLdunUrfv31V6+ON2TIENkgfteuXXjsscesAmSj0YiHHnrI7xZOgfzMhBoajUYhQ7nhhhucXnf27t2L++67z9dD84pHHnlEfnzzzTfbTA788ssvips8f+DOZ/Mf//gHli9fLrvr2GLWrFny4379+nk/wAiBCsAIVTB1J3LGwIEDA5LlSkxMxLfffotx48ahtrYWb7zxBhYsWIDrrrsO/fr1Q3JyMmpra1FUVITNmzdjxYoVaG5u9krvGhMTgyVLluCqq67C+vXrcfLkSUyZMgWFhYWYPHkyunXrhtTUVJw/fx4nTpzA8uXLsWXLFocXOjXQ6XS499578dprr6GlpQVjxozBH//4RwwZMgTR0dHYtm0b5syZg6qqKtxyyy2qa35Hjx6N6OhotLS04NVXXwVjDH379pXdBdLT0x36cXrLe++9h4EDB6KiogLz5s3D1q1bcdttt6FTp04oLy/HwoULZfN4rVaLOXPmBJVeVuSFF17At99+C4PBoEpWaPbs2Rg2bBgaGhrw+uuvY/369bjpppuQl5eHM2fO4JNPPsH27dtxzTXXYMGCBQD8Uw0+ceJE/O9//wMA3HHHHfjzn/+MDh06yN7TBQUFLlmtRQpTp07FU089hRdffBHV1dWYMmUKRo0ahSlTpqBDhw6IiopCZWUl9u7di1WrVmHPnj3QarV4++23vT53UVGRy98HV199tawRdcYdd9yBefPmYc2aNTh06BAKCwtx5513on///mhqasIvv/yCzz77DCkpKRg5ciRWrFgBwPefzz59+iA7OxulpaWYN28esrKyMHz4cNnhJC4uTi7CW7FiBWbMmIHc3Fz87ne/Q//+/ZGTkwPOOYqLi/H999/LPsExMTF49NFHfTr2sCJwnXSJUAdCb2tX/912223y+531tC4qKrL5Plu4uu++fft4v379XBprTEwM//HHHz2b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NvaEvV9sbKySkpIkST/88IOGhobC9isoKDBqZb/88kt99913unv3rvH64OCgbty4oUOHDmnTpk2PefUA8Ogsww/b5wUA8ESVl5cb21yNrUsNBALq7+8P2YbL5XLp7bffVkFBwQPvc/v2be3atcvYQWDatGmKiorSwMCAbDab1q9fr7KyMrW3t2vDhg3Kz88POf7YsWMqKyszjo2Pj5fValV2drY++ugjo193d7cOHDigmpoao83pdMpqtYacr81m+9fVYACYTOxmAAARYPSJWRaLRXa7XYmJiUpJSVFmZqZycnKUl5enqKjwH9lZWVkqKSnR999/r5qaGvX398vhcGjhwoVauXKlnnvuOSOshrN69Wo5nU5dvHhRd+7cUWdnp4aHhzVjxoyQfvHx8dqxY4euXLmiCxcuqKGhwbixLCkpSenp6crNzdVLL700SbMCAP+NlVkAAACYFjWzAAAAMC3CLAAAAEyLMAsAAADTIswCAADAtAizAAAAMC3CLAAAAEyLMAsAAADTIswCAADAtAizAAAAMC3CLAAAAEyLMAsAAADTIswCAADAtAizAAAAMC3CLAAAAEyLMAsAAADTIswCAADAtAizAAAAMC3CLAAAAEyLMAsAAADT+h8hDw6oPGZcxQAAAABJRU5ErkJggg==\n"
+            },
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "c446847d27344407ae2b09ddd84eecf8": {
+      "model_name": "LeafletWidgetControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position",
+          "transparent_bg"
+        ],
+        "widget": "IPY_MODEL_eb72101e16bb4e2f8250f37ad71e16e7"
+      }
+    },
+    "db37464f3939431099cc8b32814f58a5": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "e0ec23bef8294f17be58b888946b056d": {
+      "model_name": "MPLCanvasModel",
+      "model_module": "jupyter-matplotlib",
+      "model_module_version": "^0.9.0",
+      "state": {
+        "_cursor": "default",
+        "_dom_classes": [],
+        "_figure_label": "Figure 1",
+        "_height": 200,
+        "_image_mode": "diff",
+        "_width": 500,
+        "layout": "IPY_MODEL_db37464f3939431099cc8b32814f58a5",
+        "toolbar": "IPY_MODEL_49708ba8ede044ce86b6e4080102cc20"
+      }
+    },
+    "534e7c95211842278b5a728edc0ba8a3": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "49708ba8ede044ce86b6e4080102cc20": {
+      "model_name": "ToolbarModel",
+      "model_module": "jupyter-matplotlib",
+      "model_module_version": "^0.9.0",
+      "state": {
+        "_dom_classes": [],
+        "layout": "IPY_MODEL_534e7c95211842278b5a728edc0ba8a3",
+        "toolitems": [
+          [
+            "Home",
+            "Reset original view",
+            "home",
+            "home"
+          ],
+          [
+            "Back",
+            "Back to previous view",
+            "arrow-left",
+            "back"
+          ],
+          [
+            "Forward",
+            "Forward to next view",
+            "arrow-right",
+            "forward"
+          ],
+          [
+            "Pan",
+            "Left button pans, Right button zooms\nx/y fixes axis, CTRL fixes aspect",
+            "arrows",
+            "pan"
+          ],
+          [
+            "Zoom",
+            "Zoom to rectangle\nx/y fixes axis, CTRL fixes aspect",
+            "square-o",
+            "zoom"
+          ],
+          [
+            "Download",
+            "Download plot",
+            "floppy-o",
+            "save_figure"
+          ]
+        ]
+      }
+    },
+    "32297e8698b84792a3de873e21caeb5a": {
+      "model_name": "LeafletLayersControlModel",
+      "model_module": "jupyter-leaflet",
+      "model_module_version": "^0.14.0",
+      "state": {
+        "options": [
+          "position"
+        ],
+        "position": "topright"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "99c9d8f1c6ce454480ec8b8c237463f3"}
+</script>
+
+</body>
+</html>
