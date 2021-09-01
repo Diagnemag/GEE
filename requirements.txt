@@ -1,0 +1,14 @@
+os
+ee
+geemap
+ipywidgets
+ipyleaflet
+geopandas
+geemap.chart
+json
+pandas
+seaborn
+matplotlib.pyplot
+voila
+ipykernel
+IPython.display
